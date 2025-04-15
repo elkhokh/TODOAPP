@@ -36,4 +36,4 @@ mysqli_error($conn);
 mysqli_close($conn);
 /***************************************** close database ********************************************** */
 
-echo "welcome to in database ";
+// echo "welcome to in database ";
