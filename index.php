@@ -2,11 +2,10 @@
 <?php require_once('inc/header.php');  ?>
 
 <!-- in this project i make CURD by database and php -->
- 
     <div class="container">
         <div class="row">
             <div class="col-8 mx-auto">
-                <form action="#" method="POST" class="form border p-2 my-5">
+                <form action="handeler/create.php" method="POST" class="form border p-2 my-5">
                     <input type="text" name="title" class="form-control my-3 border border-success" placeholder="add new todo">
                     <input type="submit" value="Add" class="form-control btn btn-primary my-3 " placeholder="add new todo">
                 </form>
@@ -15,7 +14,7 @@
                 <table class="table table-bordered">
                     <thead>
                         <tr>
-                            <th>#</th>
+                            <th>Id</th>
                             <th>Task</th>
                             <th>Action</th>
                         </tr>
