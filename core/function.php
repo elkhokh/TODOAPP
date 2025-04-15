@@ -1,5 +1,5 @@
 <?php
-
+require_once 'connection.php';
 /*********************************** message function ******************************************** */
 function set_messages($type_of_alert,$message_of_error)
 {
@@ -20,16 +20,7 @@ function show_message()
 }
 
 /******************* check connection *********************** */
-$host= "localhost";
-$username  = "root";
-$password  = "";
-$database="todoapp";
-$conn=mysqli_connect($host,$username,$password,$database);
 
-if(!$conn)
-{
-die("failed connection database".mysqli_connect_error());
-}
 /********************create task **************************** */
 function  create_title_of_task($title){
 $sql="INSERT INTO `TASKS` (`title`)

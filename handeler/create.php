@@ -3,17 +3,7 @@
 // session_start();
 include_once "../core/validation.php";
 include_once "../core/function.php";
-
-$host= "localhost";
-$username  = "root";
-$password  = "";
-$database="todoapp";
-$conn=mysqli_connect($host,$username,$password,$database);
-
-if(!$conn)
-{
-die("failed connection database".mysqli_connect_error());
-}
+include_once "../core/connection.php";
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $title = trim(htmlspecialchars(htmlentities($_POST['title']))) ;
