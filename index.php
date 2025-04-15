@@ -6,8 +6,8 @@
         <div class="row">
             <div class="col-8 mx-auto">
                 <form action="handeler/create.php" method="POST" class="form border p-2 my-5">
-                    <input type="text" name="title" class="form-control my-3 border border-success" placeholder="add new todo">
-                    <input type="submit" value="Add" class="form-control btn btn-primary my-3 " placeholder="add new todo">
+                    <input type="text" name="title" class="form-control my-3 border border-success" placeholder="add new task">
+                    <input type="submit" value="Add" class="form-control btn btn-primary my-3 " placeholder="add new task">
                 </form>
             </div>
             <div class="col-12">
@@ -34,8 +34,6 @@
             </div>
         </div>
     </div>
-    <!-- git remote add origin https://github.com/elkhokh/TODOAPP.git
-git branch -M master
-git push -u origin master -->
+
 
     <?php require_once('inc/footer.php'); ?>
