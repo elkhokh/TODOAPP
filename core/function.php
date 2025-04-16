@@ -35,4 +35,9 @@ $get=" SELECT * FROM `tasks` ORDER BY id ASC ";
 $result=mysqli_query($GLOBALS['conn'], $get);
 return $result;
 }
-
+/******************** delete tasks ***************************** */
+function delete_task($id){
+    $get=" DELETE FROM `tasks` WHERE `id`=$id ";
+    $result=mysqli_query($GLOBALS['conn'], $get);
+    return $result;   
+}
