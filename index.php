@@ -39,7 +39,7 @@ $select = select_tasks();
                                 
                                         onsubmit="return confirm('Are you sure you want to delete this task?');">
 
-                                        
+
                                         <input type="hidden" name="id" value="<?= htmlspecialchars($row['id']); ?>">
                                         <button class="btn btn-outline-danger btn-sm">
                                             <i class="fa-solid fa-trash-can"></i>
@@ -48,7 +48,7 @@ $select = select_tasks();
                                     </form>
                                 </td>
                                 <td>
-                                    <a href="update" class="btn btn-info"><i class="fa-solid fa-edit"></i> </a>
+                                    <a href="edit.php?id=<?= htmlspecialchars($row['id']); ?>" class="btn btn-info"><i class="fa-solid fa-edit"></i> </a>
                                 </td>
                             </tr>
 

@@ -19,8 +19,6 @@ function show_message()
     }   
 }
 
-/******************* check connection *********************** */
-
 /********************create task **************************** */
 function  create_title_of_task($title){
 $sql="INSERT INTO `TASKS` (`title`)
@@ -41,3 +39,11 @@ function delete_task($id){
     $result=mysqli_query($GLOBALS['conn'], $get);
     return $result;   
 }
+/******************* update task ****************************** */
+function update_title_of_task($id,$update_title){
+    $get=" UPDATE `tasks` SET title='$update_title' WHERE `id`=$id ";
+    $result=mysqli_query($GLOBALS['conn'], $get);
+    return $result;   
+}
+/*************************************************************** */
+
