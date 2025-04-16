@@ -48,7 +48,7 @@ $select = select_tasks();
                                     </form>
                                 </td>
                                 <td>
-                                    <a href="edit.php?id=<?= htmlspecialchars($row['id']); ?>" class="btn btn-info"><i class="fa-solid fa-edit"></i> </a>
+                                    <a href="edit.php?id=<?= ($row['id']); ?>" class="btn btn-info"><i class="fa-solid fa-edit"></i> </a>
                                 </td>
                             </tr>
 

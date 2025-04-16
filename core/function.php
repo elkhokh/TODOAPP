@@ -40,8 +40,8 @@ function delete_task($id){
     return $result;   
 }
 /******************* update task ****************************** */
-function update_title_of_task($id,$update_title){
-    $get=" UPDATE `tasks` SET title='$update_title' WHERE `id`=$id ";
+function update_title_of_task($id,$title){
+    $get=" UPDATE `tasks` SET title='$title' WHERE `id`=$id ";
     $result=mysqli_query($GLOBALS['conn'], $get);
     return $result;   
 }

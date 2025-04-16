@@ -20,12 +20,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         exit;
     }
 
-    $update_title = [
-        'id' => $id,
-        'title' => $title
-    ];
+  
+    // print_r($title);
+    // exit;
 
-    if (update_title_of_task($id,$update_title)) 
+    if (update_title_of_task($id,$title)) 
     {
         set_messages('success', "Task Update Successfully ");
         header("Location: ../index.php");

@@ -4,7 +4,6 @@ require_once('inc/header.php');
 
 <?php
                 if (!isset($_GET['id'])) {
-
     set_messages('danger', "No Task Selected");
     header("Location: edit.php");
                     exit;
