@@ -10,4 +10,18 @@
     <title>Document</title>
 </head>
 
-<body></body>
+<body>
+<div class="container text-center">
+        <div class="row">
+            <div class="col-8 mx-auto">
+
+<?php
+session_start();
+include_once "core/function.php";  
+require_once "core/connection.php";
+?>
+<div class="container  px-3 px-lg-3 my-3">
+<?php  show_message();  ?>
+</div>
+            </div></div>
+</body>

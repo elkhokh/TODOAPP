@@ -1,6 +1,6 @@
 <?php
 
-// session_start();
+session_start();
 include_once "../core/validation.php";
 include_once "../core/function.php";
 include_once "../core/connection.php";

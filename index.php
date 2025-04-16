@@ -1,5 +1,8 @@
 
-<?php require_once('inc/header.php');  ?>
+<?php
+ require_once('inc/header.php'); 
+$select= select_tasks();
+?>
 
 <!-- in this project i make CURD by database and php -->
     <div class="container">
@@ -19,16 +22,24 @@
                             <th>Action</th>
                         </tr>
                     </thead>
+
                     <tbody>
+
+                    <?php   
+                    if(mysqli_num_rows($select)>0):
+                        while($row=mysqli_fetch_assoc($select)): ?>
+                
                             <tr>
-                                <td>1</td>
-                                <td>New Task</td>
+                                <td><?=$row['id']; ?></td>
+                                <td><?=$row['title'] ;?></td>
                                 <td>
-                                    <a href="#" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> </a>
-                                    <a href="#" class="btn btn-info"><i class="fa-solid fa-edit"></i> </a>
+                                    <a href="" class="btn btn-danger"><i class="fa-solid fa-trash-can"></i> </a>
+                                    <a href="" class="btn btn-info"><i class="fa-solid fa-edit"></i> </a>
                                 </td>
                             </tr>
-
+                        
+                            <?php endwhile; ?>
+                            <?php endif;?>
                     </tbody>
                 </table>
             </div>

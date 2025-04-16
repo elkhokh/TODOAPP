@@ -29,4 +29,10 @@ $sql="INSERT INTO `TASKS` (`title`)
        return $result;
 
 }
-/************************************************************* */
+/************************* select tasks ************************* */
+function select_tasks(){
+$get=" SELECT * FROM `tasks` ORDER BY id ASC ";
+$result=mysqli_query($GLOBALS['conn'], $get);
+return $result;
+}
+
