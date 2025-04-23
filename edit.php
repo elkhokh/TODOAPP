@@ -27,8 +27,8 @@ require_once('inc/header.php');
             <input type="hidden" id="id" name="id" class="form-control" value="<?= $select['id'] ?>">
 
                 <input type="text" name="title" class="form-control my-3 border border-success"
-                    placeholder="update task">
-                <input type="submit" value="update" class="form-control btn btn-primary my-3 " placeholder="add new task">
+                value="<?=$select['title']?>">
+                <input type="submit" value="update" class="form-control btn btn-primary my-3 " >
             </form>
         </div>
             </div>
